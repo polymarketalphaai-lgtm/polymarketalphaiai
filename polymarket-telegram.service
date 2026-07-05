@@ -1,0 +1,18 @@
+[Unit]
+Description=PolyMarketAlphaAI Telegram Bot
+After=network.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/home/ubuntu/polymarket_alpha_ai
+Environment=PATH=/home/ubuntu/polymarket_alpha_ai/venv/bin
+EnvironmentFile=/home/ubuntu/polymarket_alpha_ai/.env
+ExecStart=/home/ubuntu/polymarket_alpha_ai/venv/bin/python3 telegram_bot.py
+Restart=always
+RestartSec=5
+StandardOutput=append:/home/ubuntu/polymarket_alpha_ai/logs/telegram_bot.log
+StandardError=append:/home/ubuntu/polymarket_alpha_ai/logs/telegram_bot.error.log
+
+[Install]
+WantedBy=multi-user.target
