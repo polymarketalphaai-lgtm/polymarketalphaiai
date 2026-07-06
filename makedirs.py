@@ -2,7 +2,7 @@ import os
 import json
 
 # Define the base path
-BASE_PATH = "/mnt/agents/output/polymarket_alpha_ai"
+BASE_PATH = "/mnt/agents/skills"
 os.makedirs(BASE_PATH, exist_ok=True)
 
 # Phase 1: Create Directory Structure
