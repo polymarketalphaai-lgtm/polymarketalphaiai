@@ -23,7 +23,7 @@ Python 3.12 | PEP 8 | Typed functions | Production quality
 import os
 
 import requests
-import EmailNotFoundError
+
 import VerificationCodeError
 import VerificationCodeExpiredError
 import VerificationCodeAttemptsExceededError
